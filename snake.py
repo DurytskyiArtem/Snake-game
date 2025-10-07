@@ -194,13 +194,13 @@ class Game:
 
             start_button = pygame.Rect(90, 450, 200, 45)
             pygame.draw.rect(self.screen, (106, 158, 104), start_button, border_radius=30)
-            start_text = title_font.render('Почати гру', True, (255, 255, 255))
-            self.screen.blit(start_text, (start_button.x + 32, start_button.y + 11))
+            start_text = title_font.render('Play', True, (255, 255, 255))
+            self.screen.blit(start_text, (start_button.x + 75, start_button.y + 11))
 
             quit_button = pygame.Rect(310, 450, 200, 45)
             pygame.draw.rect(self.screen, (219, 73, 73), quit_button, border_radius=30)
-            quit_text = title_font.render('Вийти', True, (255, 255, 255))
-            self.screen.blit(quit_text, (quit_button.x + 60, quit_button.y + 11))
+            quit_text = title_font.render('Exit', True, (255, 255, 255))
+            self.screen.blit(quit_text, (quit_button.x + 75, quit_button.y + 11))
 
             title_text = more_text_font.render('This project was created for learning Python by Durytskyi Artem in 2025', True, (76, 112, 75))
             self.screen.blit(title_text, (50, 570))
@@ -247,18 +247,18 @@ class Game:
 
         button_rect = pygame.Rect(90, 450, 200, 45)
         pygame.draw.rect(end_screen, (106, 158, 104), button_rect, border_radius=30)
-        button_text = font_btn.render('Грати знову', True, (255, 255, 255))
-        end_screen.blit(button_text, (button_rect.x + 27, button_rect.y + 11))
+        button_text = font_btn.render('Play again', True, (255, 255, 255))
+        end_screen.blit(button_text, (button_rect.x + 35, button_rect.y + 11))
 
         button_rect_home = pygame.Rect(310, 450, 200, 45)
         pygame.draw.rect(end_screen, (106, 158, 104), button_rect_home, border_radius=30)
-        button_text_home = font_btn.render('На головну', True, (255, 255, 255))
-        end_screen.blit(button_text_home, (button_rect_home.x + 30, button_rect_home.y + 11))
+        button_text_home = font_btn.render('Home', True, (255, 255, 255))
+        end_screen.blit(button_text_home, (button_rect_home.x + 65, button_rect_home.y + 11))
 
         quit_button = pygame.Rect(200, 510, 200, 45)
         pygame.draw.rect(self.screen, (219, 73, 73), quit_button, border_radius=30)
-        quit_text = font_btn.render('Вийти', True, (255, 255, 255))
-        self.screen.blit(quit_text, (quit_button.x + 60, quit_button.y + 11))
+        quit_text = font_btn.render('Exit', True, (255, 255, 255))
+        self.screen.blit(quit_text, (quit_button.x + 75, quit_button.y + 11))
 
         pygame.display.flip()
 
